@@ -61,23 +61,6 @@ var BYUScriptGen = function(div) {
 	return this;
 };
 
-function print_r(obj) {
-        var str = "";
-        for(a in obj) {
-                str += a + ": " + obj[a] + "\n";
-        }
-        alert(str);
-}
-
-
-function zero_if_empty(arg) {
-	if(!arg || arg=="")
-		return 0;
-	else
-		return arg;
-}
-
-
 BYUScriptGen.prototype.returnNewRow = function (rowid, left, right) {
 	var l, r, tr;
 	l = document.createElement("td");
