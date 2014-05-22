@@ -1,4 +1,6 @@
-BYUJobScriptGenerator
+BYU Job Script Generator
 =====================
 
-Slurm and PBS batch job script generator
+Generate batch job scripts for Slurm and PBS.
+
+Licensed under LGPL v3.  Modify and enjoy.

@@ -1,0 +1,115 @@
+/*#byu_sg_input_container {
+	background-color: #e2e2e2;
+	border: 1px solid #e2e2f0;
+}*/
+
+#byu_sg_input_container tr {
+	border: 4px solid yellow;
+}
+
+#byu_sg_jobnotes {
+	margin-top: 10px;
+	margin-bottom: 1px;
+	background-color: #e2e252;
+	display: block;
+}
+
+#byu_sg_jobscript {
+	/*background-color: #e2e2e2;*/
+	background-color: #eee;
+}
+
+#byu_sg_input_container td,th {
+	background-color: #eee;
+	padding: 3px;
+}
+
+#byu_sg_input_container {
+/*	background-color: #e2e2e2;*/
+	border:1px solid #ccc;
+	margin:0 0 1em;
+}
+
+#byu_sg_input_container th {
+	border: 1px solid #808080;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.33) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.33) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,.33) inset;
+	
+	background-image: -webkit-linear-gradient(top, #aaa 0%,#888 100%);
+	background-image: -moz-linear-gradient(top, #aaa 0%, #888 100%);
+	background-image: -ms-linear-gradient(top, #aaa 0%,#888 100%);
+	background-image: -o-linear-gradient(top, #aaa 0%,#888 100%);
+	background-image: linear-gradient(top, #aaa 0%,#888 100%);
+}
+
+#byu_sg_input_container td {
+	width: 40%;
+	max-width: 500px;
+	border: 1px solid #ccc;
+}
+#byu_sg_input_container td + td {
+	width: 60%;
+	background:#fff;
+}
+#byu_sg_input_container input {
+	display:inline-block;
+}
+
+#byu_sg_input_features span {
+	display:inline-block;
+	border: 1px solid #808080;
+	background-color: #eee;
+}
+
+/* Nodes avail, etc. boxes */
+#byu_sg_input_features span > span > span {
+	display:block;
+	border: 0px;
+	width: 10em;
+	/*background-color: #e0e;*/
+}
+
+.byu_sg_input_feature_class {
+	padding: 5px;
+	background-color: #eee;
+}
+
+#byu_sg_input_partitions span {
+	display:inline-block;
+	border: 1px solid #808080;
+}
+
+/* Nodes avail, etc. boxes */
+#byu_sg_input_partitions span > span > span {
+	display:block;
+	border: 0px;
+	/*background-color: #e0e;*/
+}
+
+
+.byu_sg_input_feature_container {
+	display: inline;
+	padding: 5px;
+	background-color: #eee;
+}
+
+.byu_sg_input_feature_name {
+	display: inline;
+	font-weight: bold;
+}
+
+.byu_sg_input_partition_container {
+	display: inline;
+	padding: 5px;
+	background-color: #eee;
+}
+
+.byu_sg_input_partition_name {
+	display: inline;
+	font-weight: bold;
+}
+
+#byu_sg_script_header {
+/*	font-family: "Comic Sans MS", cursive, sans-serif; */
+}

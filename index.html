@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>Job Script Generator</title>
+	<link rel="stylesheet" type="text/css" href="BYUJobScriptGenerator.css">
+	<script type="text/javascript" src="BYUJobScriptGenerator.js"></script>
+</head>
+<body>
+<div id="BYUJobScriptGenerator"></div>
+
+<script type="text/javascript">
+	/* The latest version of the Brigham Young University Script Generator is available at http://github.com/BYUHPC/BYUJobScriptGenerator */
+
+	var byu_script_gen = new BYUScriptGen(document.getElementById("BYUJobScriptGenerator"));
+	
+	/* Dynamically generate this using PHP or whatever. You may also statically configure it */
+	byu_script_gen.settings.features = {
+		names : [
+			"amd", "avx", "ib", "intel", "m2050", "s1070", "sse4.1", "sse4.2"
+		],
+		info_base_url : "/documentation/features.html#",
+		show : true
+	};
+	byu_script_gen.settings.partitions = {
+		names : [
+			"p1", "p2", "p3"
+		],
+		info_base_url : "/documentation/partitions.php?part=",
+		show : true
+	};
+	/* End of stuff */
+
+	/* Dynamically generate this using PHP or whatever. This can be omitted if you don't have the means to populate it */
+	byu_script_gen.settings.features_status = {
+		"amd" : { "nodes_free" : 0, "nodes_total" : 2, "cores_free" : 0, "cores_total" : 32},
+		"avx" : { "nodes_free" : 35, "nodes_total" : 320, "cores_free" : 817, "cores_total" : 5120},
+		"ib" : { "nodes_free" : 71, "nodes_total" : 356, "cores_free" : 1185, "cores_total" : 5488},
+		"intel" : { "nodes_free" : 114, "nodes_total" : 894, "cores_free" : 2266, "cores_total" : 12076},
+		"m2050" : { "nodes_free" : 1, "nodes_total" : 1, "cores_free" : 12, "cores_total" : 12},
+		"s1070" : { "nodes_free" : 1, "nodes_total" : 2, "cores_free" : 8, "cores_total" : 16},
+		"sse4.1" : { "nodes_free" : 114, "nodes_total" : 894, "cores_free" : 2266, "cores_total" : 12076},
+		"sse4.2" : { "nodes_free" : 113, "nodes_total" : 892, "cores_free" : 2258, "cores_total" : 12060},
+	};
+	byu_script_gen.settings.partitions_status = {
+		"p1" : { "nodes_free" : 35, "nodes_total" : 320, "cores_free" : 817, "cores_total" : 5120},
+		"p2" : { "nodes_free" : 78, "nodes_total" : 572, "cores_free" : 1441, "cores_total" : 6940},
+		"p3" :  { "nodes_free" : 2, "nodes_total" : 32, "cores_free" : 39, "cores_total" : 512},
+	};
+	/* End of dynamically generated stuff */
+
+	byu_script_gen.init();
+</script>
+
+<!-- Attribution is not required. Feel free to remove this. -->
+<div style="font-size: 4pt;">The latest version of the <span style="font-style: italic;">Brigham Young University Job Script Generator</span> is available on <a href="http://github.com/BYUHPC/BYUJobScriptGenerator">github</a>.</div>
+
+</div>
+</body>
+</html>
