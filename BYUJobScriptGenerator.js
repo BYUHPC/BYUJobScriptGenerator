@@ -1,4 +1,4 @@
-/*****************************************************************
+/*****************************************************************\
 
 Copyright (C) 2014, Brigham Young University
 
@@ -15,7 +15,7 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-******************************************************************
+*******************************************************************
 
 Available at: https://github.com/BYUHPC/BYUJobScriptGenerator
 
@@ -31,7 +31,9 @@ This should integrate easily into any existing website.  Use CSS for styling.
 TODO:
 	job arrays
 	tooltip/help for each parameter row
-*/
+
+\*****************************************************************/
+
 
 
 var BYUScriptGen = function(div) {
